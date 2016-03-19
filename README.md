@@ -18,13 +18,13 @@ En este archivo se deben cumplimentar los siguientes campos:
 - password: contraseña del anterior usuario.
 
 Después copiaremos este archivo **fuera del directorio raiz** de forma que quede de la siguiente manera:
-
+```
 + web
   |- configuracion.ini
   |+ public_html 
    | - index.php
    | ...
-
+```
 ##3. Copiar los archivos necesarios.
 
 En el directorio donde queramos albergar la aplicación copiamos todos los archivos del proyecto **excepto configuracion.ini** (que ya hemos copiado en el paso anterior fuera del directorio público del servidor web) y el archivo crear_tablas.sql.
