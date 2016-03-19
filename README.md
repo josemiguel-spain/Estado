@@ -17,12 +17,14 @@ En este archivo se deben cumplimentar los siguientes campos:
 - usuario: nombre de usuario con el que se accederá a la base de datos.
 - password: contraseña del anterior usuario.
 
-Después copiaremos este archivo **fuera del directorio público**. Esta aplicación ha sido 
-escrita para almacenarse en el directorio raiz del servidor web. Esto es algo que tengo pensado
-cambiar pero, por ahora, los archivos van en el directorio raiz del servidor web y el archivo configuracion.ini
-va fuera de este.
+Después copiaremos este archivo **fuera del directorio raiz** de forma que quede de la siguiente manera:
+
++ web
+  |- configuracion.ini
+  |+ public_html 
+   | - index.php
+   | ...
 
 ##3. Copiar los archivos necesarios.
 
-En el directorio raiz de nuestro servidor web copiamos todos los archivos del proyecto **excepto configuracion.ini** 
-(que ya hemos copiado en el paso anterior fuera del directorio público del servidor web) y el archivo crear_tablas.sql.
+En el directorio donde queramos albergar la aplicación copiamos todos los archivos del proyecto **excepto configuracion.ini** (que ya hemos copiado en el paso anterior fuera del directorio público del servidor web) y el archivo crear_tablas.sql.
