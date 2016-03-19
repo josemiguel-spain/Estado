@@ -1,0 +1,105 @@
+body {
+	font-family: "Verdana", "Arial", "sans-serif";
+}
+
+div.login {
+
+	width: 70%;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	padding: 10px;
+	margin-top: 50px;
+	overflow: auto;
+	box-shadow: 10px 10px 5px #888888;
+
+}
+
+div.elemento {
+
+	width: 50%;
+	display: inline;
+	float: left;
+	border-width: 0px;
+	border-style: dashed;
+
+}
+
+div.etiqueta {
+
+	text-align: right;
+	margin-right: 10px;
+	width: 49%;
+	display: inline;
+	float: left;
+	font-size: small;
+
+}
+
+div.control {
+
+	box-sizing: border-box;
+
+}
+
+div.boton {
+
+	text-align: center;
+
+}
+
+div.barra_superior {
+
+	position: absolute;
+	display: table;
+	top: 0; left: 0;
+	width: 100%;
+	border-width: 1px;
+	background-color: pink;
+
+}
+
+h1 {
+
+	text-align: center;
+	font-size: large;
+	font-style: normal;
+
+}
+
+.elemento_izquierda {
+
+	float: left;
+	width: 20%;
+	height: 40px;
+	text-align: right;
+
+}
+
+.elemento_centro {
+
+	float: left;
+	width: 65%;
+	height: 40px;
+	line-height: 40px;
+
+	background-color: red;
+
+}
+
+.elemento_derecha {
+
+	float: right;
+	height: 40px;
+		line-height: 40px;
+
+	width: 15%;
+
+}
+
+.texto_estado {
+
+	width: 100%;
+
+}

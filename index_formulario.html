@@ -1,0 +1,21 @@
+	<div class="login">
+		<div class="elemento">
+			<h1>Login</h1>
+			<form name="login" action="login.php" onsubmit="return validarFormulario('login', false)" method="POST">
+				<div class="etiqueta">Usuario:</div><div class="control"><input type="text" name="usuario"/></div>
+				<div class="etiqueta">Contrase&ntilde;a.</div><div class="control"><input type="password" name="password"/></div>
+				<div class="boton"><input type="submit"/></div>
+			</form>
+		</div>
+
+		<div class="elemento">
+			<h1>Registro</h1>
+			<form name="registro" action="registro.php" onsubmit="return validarFormulario('registro', true)" method="POST">
+				<input type="hidden" name="nombre_comprobado" value="0"/>
+				<div class="etiqueta">Usuario:</div><div class="control"><input type="text" name="usuario" onkeyup="comprobarUsuario(this.value)"/></div>
+				<div class="etiqueta">Contrase&ntilde;a:</div><div class="control"><input type="password" name="password"/></div>
+				<div class="etiqueta">Repetir contrase&ntilde;a:</div><div class="control"><input type="password" name="password2"/></div>
+				<div class="boton"><span id="pista"></span><br/><input type="submit"/></div>
+			</form>
+		</div>
+	</div>

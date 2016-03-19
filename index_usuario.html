@@ -1,0 +1,18 @@
+<div class="login">
+	<h2>Hola, <?php echo constant('USUARIO'); ?>! &#91;<a href="./logout.php">Cerrar sesi&oacute;n</a>&#93;</h2>
+	<form name="mensaje" action="escribir_estado.php" onsubmit="return validarMensaje('mensaje')" method="GET">
+		<table width="100%" border="0">
+			<tr>
+				<td style="white-space: nowrap;">
+					Nuevo estado:
+				</td>
+				<td width="99%">
+					<input type="text" name="mensaje" value="<?php echo constant('ESTADO'); ?>" style="width: 100%;"/>
+				</td>
+				<td style="white-space: nowrap;">
+					<input type="submit"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
