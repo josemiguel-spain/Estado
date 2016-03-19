@@ -1,6 +1,6 @@
 <?php
 
-$configuracion = parse_ini_file("../configuracion.ini");
+$configuracion = parse_ini_file(dirname($_SERVER['DOCUMENT_ROOT']) . "/configuracion.ini");
 
 define ('COOKIE_SESION', 'cookie_sesion'); // Nombre de la cookie con el ID de sesión.
 define ('COOKIE_DURACION', 30); // Duración en días.

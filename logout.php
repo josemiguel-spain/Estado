@@ -10,7 +10,7 @@ class Logout {
 	
 	public static function escribir($sesion) {
 
-		$configuracion = parse_ini_file("../configuracion.ini");
+		$configuracion = parse_ini_file(dirname($_SERVER['DOCUMENT_ROOT']) . "/configuracion.ini");
 
 		define ('SERVIDOR', $configuracion['servidor']);
 		define ('DB_USUARIO', $configuracion['usuario']);

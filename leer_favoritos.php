@@ -16,7 +16,7 @@ class LeerFavoritos {
 			$resultado = '<div class="login">';
 			$resultado = $resultado . '<h1>Mis favoritos</h1>';
 
-			$configuracion = parse_ini_file("../configuracion.ini");
+			$configuracion = parse_ini_file(dirname($_SERVER['DOCUMENT_ROOT']) . "/configuracion.ini");
 
 			define ('SERVIDOR', $configuracion['servidor']);
 			define ('DB_USUARIO', $configuracion['usuario']);

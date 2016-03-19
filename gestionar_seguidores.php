@@ -8,7 +8,7 @@ class SeguirUsuario {
 	
 	public static function seguir($sesion, $usuario, $operacion) {
 
-		$configuracion = parse_ini_file("../configuracion.ini");
+		$configuracion = parse_ini_file(dirname($_SERVER['DOCUMENT_ROOT']) . "/configuracion.ini");
 
 		define ('SERVIDOR', $configuracion['servidor']);
 		define ('DB_USUARIO', $configuracion['usuario']);
